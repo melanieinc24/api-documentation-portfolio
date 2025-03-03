@@ -207,7 +207,4 @@ X-API-KEY: your_api_key
 
 ---
 
-## **Next Steps**
-📌 **Update your GitHub repository** with this corrected file.  
-📌 **Would you like to add a tutorial (e.g., using this API with Python)?**  
-📌 **Let me know if you need another review after updating your repo!** 🚀  
+
