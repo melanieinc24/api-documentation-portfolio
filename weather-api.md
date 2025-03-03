@@ -94,6 +94,7 @@ X-API-KEY: your_api_key
   "forecast": [
     { "date": "2025-03-04", "temperature": 18, "conditions": "Sunny" },
     { "date": "2025-03-05", "temperature": 20, "conditions": "Partly Cloudy" },
+]}
 ```
 ---
 
