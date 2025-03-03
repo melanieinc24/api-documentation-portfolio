@@ -6,7 +6,7 @@ The **Task Manager API** allows users to create, retrieve, update, and delete ta
 - **Base URL:** `https://api.taskmanager.com/v1`
 - **Authentication:** API Key required in the request headers.
 
----
+--- 
 
 ## Authentication
 To authenticate, include your API key in the request header as shown below:
