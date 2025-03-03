@@ -39,7 +39,6 @@ Retrieve the latest weather conditions for a given location.
   | `lon`      | `float`  | No | Longitude of the location. |
   | `units`    | `string` | No | Measurement units (`metric`, `imperial`). |
 
----
 
 ### **Example Request**
 ```http
@@ -47,10 +46,10 @@ GET /weather?city=London&units=metric
 Host: api.weatherdata.com
 X-API-KEY: your_api_key
 ```
----
 
 ### **Example Response**
 ```json
+[
 {
   "city": "London",
   "temperature": 15,
@@ -58,5 +57,7 @@ X-API-KEY: your_api_key
   "conditions": "Cloudy",
   "wind_speed": 12.5
 }
+]
 ```
+---
 
