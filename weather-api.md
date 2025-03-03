@@ -64,10 +64,7 @@ X-API-KEY: your_api_key
 
 ### Get a Multi-day Weather Forecast
 
-Use this endpoint to retrieve data for:
-- multi-day weather forecasts for a given location.
-- planning ahead (e.g., showing the 7-day forecast).
-- requesting forecasts for a specific number of days (default: 7 days, max: 10 days).
+Use this endpoint to retrieve data for multi-day weather forecasts for a given location, planning ahead (e.g., showing the 7-day forecast), requesting forecasts for a specific number of days (default: 7 days, max: 10 days).
 
 
 -**URL:** `GET /forecast`
