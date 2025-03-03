@@ -69,7 +69,6 @@ Use this endpoint to retrieve data for:
 - planning ahead (e.g., showing the 7-day forecast).
 - requesting forecasts for a specific number of days (default: 7 days, max: 10 days).
 
----
 
 -**URL:** `GET /forecast`
 -**Authentication Required:** ✅ Yes  
@@ -98,9 +97,45 @@ X-API-KEY: your_api_key
   "forecast": [
     { "date": "2025-03-04", "temperature": 18, "conditions": "Sunny" },
     { "date": "2025-03-05", "temperature": 20, "conditions": "Partly Cloudy" },
-    { "date": "2025-03-06", "temperature": 16, "conditions": "Rain" }
-  ]
+```
+---
+
+### Get Weather History
+
+Use this endpoint to retrieve past weather conditions for a given date and location. This is useful for climate research, weather analysis, or travel planning.
+
+- **URL:** `GET /history`
+- **Authentication Required:** ✅ Yes  
+- **Query Parameters:**
+
+  | Parameter   | Type    | Required? | Description |
+  |------------|--------|------------|-------------|
+  | `city`     | `string` | Yes | City name (e.g., "New York"). |
+  | `lat`      | `float`  | No | Latitude of the location. |
+  | `lon`      | `float`  | No | Longitude of the location. |
+  | `date`     | `string`| No | Date in `YYYY-MM-DD` format.   |
+  | `units`    | `string` | No | Measurement units (`metric`, `imperial`). |
+
+  ### **Example Request**
+```http
+GET /history?city=Paris&date=2025-02-28&units=metric
+Host: api.weatherdata.com
+X-API-KEY: your_api_key
+```
+
+### **Example Response**
+```json
+{
+  "city": "Paris",
+  "date": "2025-02-28",
+  "temperature": 10,
+  "humidity": 65,
+  "conditions": "Clear Sky",
+  "wind_speed": 8.4
 }
 ```
 ---
+
+
+
 
