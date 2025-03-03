@@ -4,7 +4,7 @@
 The **Weather API** allows users to retrieve current weather conditions, forecasts, and historical weather data for a given location. Developers can integrate this API to fetch weather details based on city name, latitude/longitude, or ZIP code.
 
 - **Base URL:** `https://api.weatherdata.com/v1`
-- **Authentication:** API Key required in the request headers.
+- **Authentication:** API Key required in the request headers. 
 
 ---
 
