@@ -61,3 +61,46 @@ X-API-KEY: your_api_key
 ```
 ---
 
+
+### Get a Multi-day Weather Forecast
+
+Use this endpoint to retrieve data for:
+- multi-day weather forecasts for a given location.
+- planning ahead (e.g., showing the 7-day forecast).
+- requesting forecasts for a specific number of days (default: 7 days, max: 10 days).
+
+---
+
+-**URL:** `GET /forecast`
+-**Authentication Required:** ✅ Yes  
+-**Query Parameters:**
+
+  | Parameter   | Type    | Required? | Description |
+  |------------|--------|------------|-------------|
+  | `city`     | `string` | Yes | City name (e.g., "New York"). |
+  | `lat`      | `float`  | No | Latitude of the location. |
+  | `lon`      | `float`  | No | Longitude of the location. |
+  | `days`     | `integer`| No | Number of forecast days (default: 7, max: 10).  |
+  | `units`    | `string` | No | Measurement units (`metric`, `imperial`). |
+
+
+  ### **Example Request**
+```http
+GET /forecast?city=Tokyo&days=5&units=metric
+Host: api.weatherdata.com
+X-API-KEY: your_api_key
+```
+
+### **Example Response**
+```json
+{
+  "city": "Tokyo",
+  "forecast": [
+    { "date": "2025-03-04", "temperature": 18, "conditions": "Sunny" },
+    { "date": "2025-03-05", "temperature": 20, "conditions": "Partly Cloudy" },
+    { "date": "2025-03-06", "temperature": 16, "conditions": "Rain" }
+  ]
+}
+```
+---
+
