@@ -27,11 +27,13 @@ The Weather API provides the following endpoints:
 ---
 
 ### Get Current Weather
+
 Retrieve the latest weather conditions for a given location.
 
 - **URL:** `GET /weather`
 - **Authentication Required:** ✅ Yes  
 - **Query Parameters:**
+
   | Parameter   | Type    | Required? | Description |
   |------------|--------|------------|-------------|
   | `city`     | `string` | Yes | City name (e.g., "New York"). |
@@ -49,7 +51,6 @@ X-API-KEY: your_api_key
 
 ### **Example Response**
 ```json
-[
 {
   "city": "London",
   "temperature": 15,
@@ -57,7 +58,6 @@ X-API-KEY: your_api_key
   "conditions": "Cloudy",
   "wind_speed": 12.5
 }
-]
 ```
 ---
 
