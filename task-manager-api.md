@@ -26,7 +26,7 @@ X-API-KEY: your_api_key
 
 ## Endpoints
 
-### **1. Get All Tasks**
+### **Get All Tasks**
 Retrieve a list of tasks.
 
 - **URL:** `GET /tasks`
@@ -67,7 +67,7 @@ X-API-KEY: your_api_key
 
 ---
 
-### **2. Get a Single Task**
+### **Get a Single Task**
 Retrieve a specific task by ID.
 
 - **URL:** `GET /tasks/{id}`
@@ -98,7 +98,7 @@ X-API-KEY: your_api_key
 
 ---
 
-### **3. Create a Task**
+### **Create a Task**
 Add a new task.
 
 - **URL:** `POST /tasks`
@@ -139,7 +139,7 @@ Content-Type: application/json
 
 ---
 
-### **4. Update a Task**
+### **Update a Task**
 Modify an existing task.
 
 - **URL:** `PUT /tasks/{id}`
@@ -174,7 +174,7 @@ Content-Type: application/json
 
 ---
 
-### **5. Delete a Task**
+### **Delete a Task**
 Remove a task from the system.
 
 - **URL:** `DELETE /tasks/{id}`
