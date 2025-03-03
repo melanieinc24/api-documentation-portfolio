@@ -15,3 +15,46 @@ To authenticate, include your API key in the request header:
 X-API-KEY: your_api_key
 ```
 
+##Endpoints
+The Weather API provides the following endpoints:
+
+| Method | Endpoint         | Description |
+|--------|----------------|-------------|
+| `GET`  | `/weather`      | Get current weather conditions. |
+| `GET`  | `/forecast`     | Get a multi-day weather forecast. |
+| `GET`  | `/history`      | Retrieve past weather data. |
+
+---
+
+###Get Current Weather
+Retrieve the latest weather conditions for a given location.
+
+- **URL:** `GET /weather`
+- **Authentication Required:** ✅ Yes  
+- **Query Parameters:**
+  | Parameter   | Type    | Required? | Description |
+  |------------|--------|------------|-------------|
+  | `city`     | `string` | Yes | City name (e.g., "New York"). |
+  | `lat`      | `float`  | No | Latitude of the location. |
+  | `lon`      | `float`  | No | Longitude of the location. |
+  | `units`    | `string` | No | Measurement units (`metric`, `imperial`). |
+
+---
+
+### **Example Request**
+```http
+GET /weather?city=London&units=metric
+Host: api.weatherdata.com
+X-API-KEY: your_api_key
+
+---
+
+### **Example Response**
+{
+  "city": "London",
+  "temperature": 15,
+  "humidity": 72,
+  "conditions": "Cloudy",
+  "wind_speed": 12.5
+}
+
