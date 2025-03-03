@@ -13,5 +13,5 @@ To authenticate, include your API key in the request header:
 
 ```http
 X-API-KEY: your_api_key
-'''
+```
 
