@@ -8,7 +8,7 @@ The **Weather API** allows users to retrieve current weather conditions, forecas
 
 ---
 
-## Authentication
+## Authentication  
 To authenticate, include your API key in the request header:
 
 ```http
